@@ -1,0 +1,22 @@
+﻿<Window x:Class="SimpleGrid.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Simple Grid" Height="384" Width="382">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Row="0" Grid.Column="0">0x0</Button>
+        <Button Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2">0x1 ColumnSpan=2</Button>
+        <Button Grid.Row="1" Grid.Column="0" Grid.RowSpan="2">1x0 RowSpan=2</Button>
+        <Button Grid.Row="1" Grid.Column="1" Grid.RowSpan="2" Grid.ColumnSpan="2">1x1 RowSpan=2 ColumnSpan=2</Button>
+    </Grid>
+</Window>

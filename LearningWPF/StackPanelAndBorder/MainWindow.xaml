@@ -1,0 +1,17 @@
+﻿<Window x:Class="StackPanelAndBorder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="StackPanel And Border" Height="384" Width="288">
+    <Border Margin="5" Padding="5"
+            Background="LightYellow"
+            BorderBrush="SteelBlue"
+            BorderThickness="3,5,3,5"
+            CornerRadius="3"
+            VerticalAlignment="Top">
+        <StackPanel>
+            <Button Margin="3">One</Button>
+            <Button Margin="3">Two</Button>
+            <Button Margin="3">Three</Button>
+        </StackPanel>
+    </Border>
+</Window>
